@@ -130,7 +130,7 @@ As shown above, the number of images in the training and valid datasets is large
  training set of our segmentation model.
 <br>
 <h3>2.2 Derivation of ImageMask Dataset</h3>
-The folder structure of our <b>OAI-Images</b> derived from the original dataet excluded <b>Normal</b> is as follows,
+The folder structure of our <b>OAI-Images</b> derived from the original dataset excluded <b>Normal</b> is as follows,
 but it contains no annotation (mask) files.
 <br>
 <pre>
@@ -180,7 +180,7 @@ tool to flip horizontally and vertically the Severe images.
 We generated a pretrained FlexUNet Segmentation Model by using the first <b>OAI-Knee-Osteoarthritis-Canny-Edge-Detection</b> dataset.<br>
 <br>
 <b>Step 5</b><br>
-We generated the second pseduo masks by applying the segementation (inference) method of the pretrained FlexUNet Model.<br>
+We generated the second pseudo masks by applying the segmentation (inference) method of the pretrained FlexUNet Model.<br>
 <br>
 <b>Step 6</b><br>
 We generated curated pseudo masks from the second pseudo masks generated in the previous step by using a 
@@ -325,7 +325,7 @@ and run the following bat file to evaluate the TensorFlowUNet model for OAI-Knee
 </pre>
 This runs the following command.
 <pre>
->python ../../../src/TensorFlowFlexUNetEvaluator.py ./train_eval_infer_aug.config
+>python ../../../src/TensorFlowFlexUNetEvaluator.py ./train_eval_infer.config
 </pre>
 
 Evaluation console output:<br>
@@ -350,7 +350,7 @@ and run the following bat file to infer segmentation regions for images using th
 </pre>
 This runs the following command.
 <pre>
->python ../../../src/TensorFlowFlexUNetInferencer.py ./train_eval_infer_aug.config
+>python ../../../src/TensorFlowFlexUNetInferencer.py ./train_eval_infer.config
 </pre>
 <hr>
 <b>mini_test_images</b><br>
