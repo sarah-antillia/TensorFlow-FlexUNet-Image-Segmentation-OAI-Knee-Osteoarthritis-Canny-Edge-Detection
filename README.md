@@ -18,7 +18,11 @@ which was derived by us from the following dataset:
 <a href="https://www.kaggle.com/datasets/chauvvan/the-osteoarthritis-initiativeoai">
 <b>The Osteoarthritis Initiative(OAI)</b>
 </a>  by CITIVAN.
-<br>
+<br><br>
+This experiment is a new approach to the Knee Osteoarthritis X-Ray Edge Detection Segmentation model based on 
+ <b>Canny Edge Pseudo Masks</b>,  
+which differs from conventional image segmentation models.
+
 <br>
 <hr>
 <b>Actual Image Segmentation for OAI Knee Canny Edge Detection Images of 256x256 pixels</b><br>
